@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <!--log config-->
+  <log>
+    <log_file_base_name>log</log_file_base_name>
+    <!--identify max size of single log file, MB-->
+    <log_max_file_size>5</log_max_file_size>
+
+    <!--log level: DEBUG < INFO < WARN < ERROR-->
+    <log_level>DEBUG<log_level>
+
+    <!--inteval that put log info to async logger, s-->
+    <log_sync_inteval>3</log_sync_inteval>
+  </log>
+
+  <coroutine>
+    <!--coroutine stack size (KB)-->
+    <coroutine_stack_size>256</coroutine_stack_size>
+
+    <!--default coroutine pool size-->
+    <coroutine_pool_size>2500</coroutine_pool_size>
+
+  </coroutine>
+
+  <!--max time when call connect, s-->
+  <max_connect_timeout>75</max_connect_timeout>
+
+  <eventloop_num>loop</eventloop_num>
+
+  <!--count of io threads, at least 1-->
+  <iothread_num>5</iothread_num>
+
+</root>
